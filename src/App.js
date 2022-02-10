@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './style.css'
+import Navbar from './Navbar'
+import Badge from './Badge'
+import Schedule from './Schedule'
+import Table from './Table'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    return (
+        <div className='flexbox-container'>
+            <Navbar/>
+            <div className='box-1'>
+                <div className='box-2'>
+                    <Badge/>
+                    <Schedule/>
+                </div>
+                <Table/>
+            </div>
+        </div>
+    )
 }
-
-export default App;

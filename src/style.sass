@@ -1,0 +1,225 @@
+*
+    margin: 0
+    padding: 0
+
+body 
+    background: #E8E8E8
+    max-width: 1400px
+    font-family: Verdana, Geneva, sans-serif
+    font-weight: 50
+    color: #686868
+
+h1
+    font-weight: 100
+    margin: 10px
+    font-size: 20px
+    cursor: pointer
+
+//side navbar-----------------------------------
+
+.nav
+    background-image: linear-gradient(to left, rgb(175, 25, 82), rgb(221, 70, 24))
+
+.list hr
+    margin-top: 10px
+
+.list li:hover
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1)
+
+.logo
+    width: 20px
+    height: auto
+    margin: 15px
+    cursor: pointer
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(105%) contrast(101%)
+
+i
+    width: 27px
+    height: auto
+    margin: 20px 0px 0px 5px
+    cursor: pointer
+    color: white
+    padding: 0px 12px 8px 12px
+
+li
+    list-style: none
+
+ul hr
+    color: white
+    margin-left: -5px
+    margin-right: -1px
+
+.flexbox-item hr
+    color: #E8E8E8
+
+.menu
+    float: right
+
+.options 
+    display: flex
+    position: absolute
+    opacity: 0
+    flex-direction: column
+  
+.options.active 
+    opacity: 1
+    background-image: linear-gradient(to top, rgb(175, 25, 82), rgb(221, 70, 24))
+
+//badge output------------------------------------
+
+.flexbox-item-2 p
+    margin: 15px 0px 15px 15px
+    font-size: 12px
+
+.badge-details
+    color: #C0C0C0
+
+.check-in
+    margin-top: 60px
+    i
+        display: inline
+        margin: 0px 10px 0px -20px
+
+//schedule-----------------------------------------
+
+.inline
+    display: flex
+    align-items: center
+    justify-content: space-between
+    i
+        margin-bottom: 10px
+
+.inline-sunday
+    display: flex
+    align-items: center
+    p 
+        color: #C0C0C0
+        font-size: 13px
+
+.schedule-icons
+    i
+        color: purple
+        display: inline
+        margin: 0px 20px 0px -20px
+
+.divider
+    color: purple
+    width: 10px
+
+.schedule
+    text-align: left
+    border-collapse: collapse
+    height: 85%
+    width: 100%
+    th, td
+        border-collapse: collapse
+        border-top: 1px solid #ddd
+        font-size: 12px
+        height: 50px
+    th
+        width: 70px
+        padding-left: 20px
+
+.no-border
+    border-top: hidden
+
+//table------------------------------------------
+
+.table
+    overflow-x: auto
+    white-space: nowrap
+    text-align: left
+    td:hover
+        cursor: pointer
+    th
+        color: purple
+        font-weight: 300
+    th, td
+        border-bottom: 1px solid #ddd
+        width: 150px
+        font-size: 12px
+        height: 60px
+        padding-right: 40px
+
+th input, td input
+    margin-left: 10px
+    margin-right: -20px
+
+.checkbox
+    width: 20px!important
+
+//flexbox-----------------------------------------
+
+.box-2
+    flex-direction: column
+
+.flexbox-container
+    display: flex
+    flex-direction: column
+    align-content: flex-start
+    max-width: 1400px
+
+.flexbox-item
+    margin: 10px
+    background: white
+    align-items: center
+
+.flexbox-item-2
+    width: 350px
+    height: 350px
+    display: inline-block
+    i 
+        color: gray
+
+.flexbox-item-3
+    width: 425px
+    height: 330px
+
+.flexbox-item-4
+    min-height: 400px
+    width: 1300px
+
+@media only screen and (min-width: 600px)
+    .menu
+        display: none
+
+    .options 
+        opacity: 1
+        position: relative
+
+    .nav
+        float: left
+        display: flex
+        flex-direction: column
+        background-image: linear-gradient(to top, rgb(175, 25, 82), rgb(221, 70, 24))
+        height: 100vh
+        width: 60px
+        align-items: center
+        margin-right: 20px
+        position: sticky
+        top: 0
+
+    .logo
+        margin: 0px
+    
+    .flexbox-container
+        display: flex
+        flex-direction: row
+    
+    .box-2
+        display: flex
+
+    .arrow 
+        margin-top: 160px
+        hr
+            margin-bottom: -10px
+
+@media only screen and (min-width: 800px)
+    .box-2
+        flex-direction: row
+
+    .table
+        white-space: normal
+
+    .flexbox-item-3
+        width: 925px
