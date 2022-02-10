@@ -19,7 +19,7 @@ h1 {
 }
 
 .nav {
-  background-image: linear-gradient(to left, #af1952, #dd4618);
+  background-image: linear-gradient(to left, #af1996, #da1848);
 }
 
 .list hr {
@@ -74,7 +74,7 @@ ul hr {
 
 .options.active {
   opacity: 1;
-  background-image: linear-gradient(to top, #af1952, #dd4618);
+  background-image: linear-gradient(to top, #af1996, #da1848);
 }
 
 .flexbox-item-2 p {
@@ -223,7 +223,7 @@ th input, td input {
     float: left;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to top, #af1952, #dd4618);
+    background-image: linear-gradient(to top, #af1996, #da1848);
     height: 100vh;
     width: 60px;
     align-items: center;
